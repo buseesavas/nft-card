@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: #0d192c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.container {
+  background-color: #15263f;
+  color: white;
+  box-shadow: 0px 25px 50px 0px #00000018;
+  padding-inline: 24px;
+  padding-bottom: 32px;
+  padding-top: 24px;
+  display: inline-block;
+  border-radius: 10px;
+}
+.nft-image {
+  position: relative;
+  display: inline-block;
+}
+
+.nft-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay img {
+  width: 48px;
+  opacity: 1;
+}
+
+.overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 255, 248, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.nft-image:hover .overlay {
+  opacity: 1;
+}
+.nft-image:hover .img1 {
+  opacity: 1;
+}
+
+p {
+  max-width: 302px;
+  color: #8bacd9;
+  font-family: "Outfit";
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 26px;
+  text-align: left;
+  margin-top: 16px;
+}
+
+h1 {
+  font-family: "Outfit";
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 27.72px;
+  text-align: left;
+  margin-top: 24px;
+}
+
+.nft-price {
+  display: flex;
+  align-items: center;
+  margin-top: 24px;
+}
+
+.nft-price img {
+  margin-right: 6px;
+}
+.nft-price span {
+  font-family: "Outfit";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20.16px;
+  text-align: left;
+  color: #00fff8;
+  display: inline-block;
+}
+
+.creation-info {
+  display: flex;
+  align-items: center;
+  font-family: "Outfit";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20.16px;
+  text-align: left;
+  color: #8bacd9;
+  border-top: 1px solid #2e405a;
+  padding-top: 16px;
+  margin-top: 24px;
+}
+.creation-info img {
+  margin-right: 16px;
+}
+.creation-info span {
+  display: inline-block;
+  color: white;
+  margin-left: 5px;
+}
+
+h1:hover,
+.creation-info span:hover {
+  color: #00fff8;
+}
